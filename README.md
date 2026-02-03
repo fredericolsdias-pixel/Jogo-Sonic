@@ -43,5 +43,5 @@ jogo-sonic/
 │
 ├── index.html
 ├── script.js
-└── assets/
-    └── imagens/
+└── style.css
+    └── Arquivos/
