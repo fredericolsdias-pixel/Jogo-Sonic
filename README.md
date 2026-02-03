@@ -24,7 +24,7 @@ Não se trata de um jogo completo, mas de um **projeto educacional introdutório
 ## 🕹️ Funcionalidades
 
 - movimentação do personagem (Sonic) na tela
-- controle via teclado
+- controle via mouse
 - interação direta entre HTML e JavaScript
 
 ---
