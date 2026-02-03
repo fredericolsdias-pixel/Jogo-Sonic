@@ -1,0 +1,109 @@
+* { 
+padding: 0; 
+margin: 0; 
+box-sizing: border-box; 
+} 
+.gameplay {
+  width: 80%;
+  height: 520px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("./Arquivos/Fundo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.sonic { 
+bottom: 20px; 
+position: absolute; 
+width: 150px; 
+} 
+.jump { 
+animation: 1s sonic_animation infinite ease-out; 
+} 
+.eggman { 
+width: 250px; 
+position: absolute; 
+bottom: 20px; 
+right: 0; 
+animation: 2s eggman_animation infinite linear; 
+}
+#score {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 18px;
+  border-radius: 12px;
+
+  z-index: 10;
+  user-select: none;
+}
+.reiniciar-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 15px 40px;
+  font-size: 22px;
+  font-weight: bold;
+
+  color: #fff;
+  background: linear-gradient(180deg, #ff3c3c, #b80000);
+  border: none;
+  border-radius: 14px;
+
+  cursor: pointer;
+  z-index: 20;
+
+  box-shadow: 0 6px 0 #7a0000;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.reiniciar-btn:hover {
+  filter: brightness(1.1);
+}
+
+.reiniciar-btn:active {
+  transform: translate(-50%, -45%);
+  box-shadow: 0 3px 0 #7a0000;
+}
+
+.reiniciar-btn:focus {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+
+
+@keyframes eggman_animation { 
+0% { 
+right: -250px; 
+} 
+100% { 
+right: 100%; 
+} 
+} 
+@keyframes sonic_animation { 
+0% { 
+bottom: 110px; 
+} 
+25% { 
+bottom: 250px; 
+} 
+75% { 
+bottom: 250px; 
+} 
+100% { 
+bottom: 110px; 
+} 
+}
